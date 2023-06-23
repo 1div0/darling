@@ -1,4 +1,4 @@
-ARG OS=fedora:37
+ARG OS=fedora:38
 FROM ${OS}
 
 SHELL ["bash", "-euxvc"]

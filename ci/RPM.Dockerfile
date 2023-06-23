@@ -1,7 +1,7 @@
 # this Dockerfile must be built using the following command:
 #     docker build -f ../ci/RPM.Dockerfile .
 # this command must be run while in the `rpm` directory in the root of the repo.
-FROM fedora:37
+FROM fedora:38
 LABEL name=darling-build-image-fedora version=0.1.0
 RUN dnf install -y rpm-build dnf-utils rpmdevtools git; \
     source /etc/os-release; \
